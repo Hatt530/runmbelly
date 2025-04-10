@@ -1,11 +1,11 @@
 const defaultContacts = [
-  { name: "driver chunky", phone: "+8768383154" },
+  { name: "John Doe", phone: "+1234567890" },
   { name: "Jane Smith", phone: "+1987654321" },
   { name: "Customer Support", phone: "+1123456789" },
 ];
 
 const defaultWhatsAppContacts = [
-  { name: "driver chunky", phone: "8768383154" },
+  { name: "John Doe", phone: "1234567890" },
   { name: "Jane Smith", phone: "1987654321" },
   { name: "Customer Support", phone: "1123456789" },
 ];
@@ -41,7 +41,7 @@ function renderWhatsAppContacts() {
 
     const link = document.createElement("a");
     link.className = "whatsapp-link";
-    const message = encodeURIComponent("Hello! I found your contact on the Nobilis Tech website.");
+    const message = encodeURIComponent("hi");
     link.href = `https://wa.me/${contact.phone}?text=${message}`;
     link.target = "_blank";
     link.textContent = `Message ${contact.name}`;
