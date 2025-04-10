@@ -42,28 +42,3 @@ a.call-link, a.whatsapp-link {
 a.call-link:hover, a.whatsapp-link:hover {
   text-decoration: underline;
 }
-form {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-input, textarea {
-  padding: 0.75rem;
-  border-radius: 8px;
-  border: 1px solid #cbd5e0;
-  font-size: 1rem;
-}
-button[type="submit"] {
-  padding: 0.75rem;
-  background-color: #2c5282;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-button[type="submit"]:hover {
-  background-color: #2b6cb0;
-}
