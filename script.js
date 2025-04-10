@@ -5,7 +5,7 @@ const defaultContacts = [
 ];
 
 const defaultWhatsAppContacts = [
-  { name: "John Doe", phone: "1234567890" },
+  { name: "driver a", phone: "8763235647" },
   { name: "Jane Smith", phone: "1987654321" },
   { name: "Customer Support", phone: "1123456789" },
 ];
