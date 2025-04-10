@@ -13,7 +13,7 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
 }
-h1 {
+h1, h2 {
   text-align: center;
   color: #2c5282;
 }
@@ -26,17 +26,20 @@ li {
   margin: 0.5rem 0;
   padding: 1rem;
   border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   transition: background 0.2s;
 }
 li:hover {
   background: #e2e8f0;
 }
-a.call-link {
+a.call-link, a.whatsapp-link {
   text-decoration: none;
   color: #2b6cb0;
   font-weight: 600;
 }
-a.call-link:hover {
+a.call-link:hover, a.whatsapp-link:hover {
   text-decoration: underline;
 }
 form {
@@ -51,7 +54,7 @@ input, textarea {
   border: 1px solid #cbd5e0;
   font-size: 1rem;
 }
-button {
+button[type="submit"] {
   padding: 0.75rem;
   background-color: #2c5282;
   color: white;
@@ -61,6 +64,6 @@ button {
   cursor: pointer;
   transition: background 0.2s;
 }
-button:hover {
+button[type="submit"]:hover {
   background-color: #2b6cb0;
 }
