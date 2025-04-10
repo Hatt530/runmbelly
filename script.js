@@ -1,5 +1,5 @@
 const defaultContacts = [
-  { name: "John Doe", phone: "+1234567890" },
+  { name: "driver chunky", phone: "+8768383154" },
   { name: "Jane Smith", phone: "+1987654321" },
   { name: "Customer Support", phone: "+1123456789" },
 ];
