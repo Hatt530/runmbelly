@@ -5,7 +5,7 @@ const defaultContacts = [
 ];
 
 const defaultWhatsAppContacts = [
-  { name: "driver a", phone: "8763235647" },
+  { name: "John Doe", phone: "1234567890" },
   { name: "Jane Smith", phone: "1987654321" },
   { name: "Customer Support", phone: "1123456789" },
 ];
@@ -41,6 +41,8 @@ function renderWhatsAppContacts() {
 
     const link = document.createElement("a");
     link.className = "whatsapp-link";
+
+    // Make sure we encode the message correctly and form the URL correctly.
     const message = encodeURIComponent("hi");
     link.href = `https://wa.me/${contact.phone}?text=${message}`;
     link.target = "_blank";
