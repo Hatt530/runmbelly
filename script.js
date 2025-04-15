@@ -39,16 +39,17 @@ function renderWhatsAppContacts() {
   defaultWhatsAppContacts.forEach((contact) => {
     const li = document.createElement("li");
 
-    const link = document.createElement("a");
-    link.className = "whatsapp-link";
+    const button = document.createElement("button");
+    button.className = "whatsapp-link";
+    button.textContent = `Message ${contact.name}`;
+    button.onclick = () => {
+      const number = contact.phone.replace(/\D/g, ""); // Remove non-numeric chars
+      const message = encodeURIComponent("hi");
+      const url = `https://api.whatsapp.com/send?phone=${number}&text=${message}`;
+      window.open(url, "_blank");
+    };
 
-    // Make sure we encode the message correctly and form the URL correctly.
-    const message = encodeURIComponent("hi");
-    link.href = `https://wa.me/${contact.phone}?text=${message}`;
-    link.target = "_blank";
-    link.textContent = `Message ${contact.name}`;
-
-    li.appendChild(link);
+    li.appendChild(button);
     list.appendChild(li);
   });
 }
