@@ -33,26 +33,6 @@ function renderContacts() {
   });
 }
 
-function renderWhatsAppContacts() {
-  const list = document.getElementById("whatsappList");
-  list.innerHTML = "";
-  defaultWhatsAppContacts.forEach((contact) => {
-    const li = document.createElement("li");
-
-    const button = document.createElement("button");
-    button.className = "whatsapp-link";
-    button.textContent = `Message ${contact.name}`;
-    button.onclick = () => {
-      const number = contact.phone.replace(/\D/g, ""); // Remove non-numeric chars
-      const message = encodeURIComponent("hi");
-      const url = `https://api.whatsapp.com/send?phone=${number}&text=${message}`;
-      window.open(url, "_blank");
-    };
-
-    li.appendChild(button);
-    list.appendChild(li);
-  });
-}
 
 renderContacts();
 renderWhatsAppContacts();
