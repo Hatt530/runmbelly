@@ -4,3 +4,8 @@ function openWhatsApp() {
   const url = `https://wa.me/${phoneNumber}?text=${message}`;
   window.open(url, '_blank');
 }
+
+function callNow() {
+  const phoneNumber = 'tel:+18763235647';
+  window.location.href = phoneNumber;
+}
