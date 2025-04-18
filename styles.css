@@ -9,8 +9,11 @@ body {
   margin: 0;
 }
 
-.chat-button {
-  background-color: #25D366;
+button {
+  margin: 10px;
+}
+
+.chat-button, .call-button {
   color: white;
   border: none;
   padding: 15px 30px;
@@ -21,6 +24,18 @@ body {
   transition: background-color 0.3s ease;
 }
 
+.chat-button {
+  background-color: #25D366;
+}
+
 .chat-button:hover {
   background-color: #1ebe5d;
+}
+
+.call-button {
+  background-color: #007bff;
+}
+
+.call-button:hover {
+  background-color: #0069d9;
 }
