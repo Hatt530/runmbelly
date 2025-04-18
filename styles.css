@@ -34,7 +34,7 @@ button {
 }
 
 .call-button{
-  color: green;
+  color: white;
   border: none;
   padding: 15px 30px;
   font-size: 18px;
@@ -53,7 +53,7 @@ button {
 }
 
 .call-button: {
-  background-color: #007bff;
+  background-color: #0000FF;
 }
 
 .call-button:hover {
