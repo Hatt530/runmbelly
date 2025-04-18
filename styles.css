@@ -22,7 +22,7 @@ button {
 }
 
 
-.chat-button{
+.chat-button , call-button{
   color: white;
   border: none;
   padding: 15px 30px;
@@ -41,7 +41,7 @@ button {
   background-color: #1ebe5d;
 }
 
-.call-button {
+.call-button: {
   background-color: #007bff;
 }
 
